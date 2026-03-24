@@ -29,15 +29,19 @@ This project is an Optical Mark Recognition (OMR) system built using Python and 
    ```bash
    git clone https://github.com/Poornima16B/Optical-Mark-Recognition.git
    cd Optical-Mark-Recognition
-2.Install the required libraries:
-      pip install opencv-python numpy
-3.Run the main python script:
-      python OMR_Main.py
+2. **Install the required libraries:**
+   ```bash
+   pip install opencv-python numpy
+
+3. **Run the main python script::**
+   ```bash
+   python OMR_Main.py
+
+   
 
 
-
-
-      How it Works underlying Image Processing
+ How it Works underlying Image Processing
+ 
 Preprocessing: The image is translated to grayscale and blurred. Canny Edge Detection runs to find prominent edges.
 Contours: The code locates the largest rectangular contour corresponding to the MCQ paper.
 Perspective Transform: It "warps" the image to a perfectly flat, top-down view centered on just the bubble choices.
