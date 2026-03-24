@@ -43,8 +43,12 @@ This project is an Optical Mark Recognition (OMR) system built using Python and 
  How it Works underlying Image Processing
  
 Preprocessing: The image is translated to grayscale and blurred. Canny Edge Detection runs to find prominent edges.
+
 Contours: The code locates the largest rectangular contour corresponding to the MCQ paper.
+
 Perspective Transform: It "warps" the image to a perfectly flat, top-down view centered on just the bubble choices.
+
 Thresholding: Converts the warped image into black and white to easily distinguish shaded areas.
+
 Grading: Separates the image into a grid of questions and options, counts non-zero pixels in each option boundary, and logs the highest value as the selected answer.
 
